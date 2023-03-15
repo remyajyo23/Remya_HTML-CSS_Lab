@@ -1,0 +1,89 @@
+.bar-graph .year {
+    animation: fade-in-text 2.2s 0.1s forwards;
+}
+
+.bar-graph-vertical {
+    margin-top: 200px;
+    margin-left: 600px;
+    width: 40%;
+}
+
+.bar-graph-vertical .bar-container {
+    float: left;
+    height: 260px;
+    margin-right: 8px;
+    position: relative;
+    text-align: center;
+    width: 40px;
+}
+
+.bar-graph-vertical .bar {
+    border-radius: 3px;
+    bottom: 40px;
+    position: absolute;
+    width: 40px;
+}
+
+.bar-graph-vertical .year {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+}
+
+.bar-graph-two .bar::after {
+    animation: fade-in-text 2.2s 0.1s forwards;
+    color: #fff;
+    font-weight: 700;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    top: 24px;
+    align-items: center;
+}
+
+.bar-graph-two .bar-one .bar {
+    background-color: gainsboro;
+    animation: show-bar-one-vertical 1.2s 0.1s forwards;
+}
+
+.bar-graph-two .bar-two .bar {
+    background-color: gainsboro;
+    animation: show-bar-two-vertical 1.2s 0.2s forwards;
+}
+
+.bar-graph-two .bar-three .bar {
+    background-color: gainsboro;
+    animation: show-bar-three-vertical 1.2s 0.3s forwards;
+}
+
+@keyframes show-bar-one-vertical {
+    0% {
+        height: 0;
+    }
+
+    100% {
+        height: 30%;
+    }
+}
+
+@keyframes show-bar-two-vertical {
+    0% {
+        height: 0;
+    }
+
+    100% {
+        height: 45%;
+    }
+}
+
+@keyframes show-bar-three-vertical {
+    0% {
+        height: 0;
+    }
+
+    100% {
+        height: 80%;
+    }
+}
